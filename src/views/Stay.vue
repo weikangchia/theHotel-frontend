@@ -34,7 +34,7 @@
         <div class="stayWrapper">
           <div class="titleText">Hi {{ $auth.user.nickname }}, your stay started at:</div>
           <div class="titleTime">1:00 <span style="font-size: 16px;">PM</span></div>
-          <hr />
+          <hr class="timeHr" />
           <p>Kick back, relax and enjoy your stay!</p>
           <p>When you're ready to leave, tap check-out below.</p>
           <v-ons-button modifier="large" style="margin-top: 32px;" @click="showModal">CHECK-OUT</v-ons-button>
@@ -146,7 +146,7 @@ export default {
     font-weight: 500;
   }
 
-  hr {
+  .timeHr {
     display: block;
     height: 1px;
     border: 0;
